@@ -1,0 +1,39 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div id="include" th:insert="fragment/include"></div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        initDropdown();
+    });
+</script>
+<div id="navigation" th:insert="fragment/header"></div>
+<div id="container">
+
+  <div class="row">
+    <div class="col s1 m3 l2"></div>
+    <div class="col s10 m6 l8">
+      <div class="card small">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img src="../images/sample-1.jpg" /> <span class="card-title">Access</span>
+        </div>
+        <div class="card-content">
+          電車でお越しの場合：JR総武線　三鷹駅で下車し〇〇口を出て徒歩？分<br />
+          お車でお越しの場合：駐車場が御座いませんので近隣のコインパーキングをご利用ください。
+        </div>
+      </div>
+    </div>
+    <div class="col s1 m3 l2"></div>
+  </div>
+  <div class="row">
+    <div class="col s1 m3 l2"></div>
+    <div class="col s10 m6 l8">
+          <div class="studio-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94536.42881474271!2d139.49294439585762!3d35.66721137005342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018efb04d41ac43%3A0x172e14be70c335a!2z5LiJ6be56aeF!5e0!3m2!1sja!2sjp!4v1523367574278" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+    </div>
+    <div class="col s1 m3 l2"></div>
+  </div>
+
+</div>
+<div id="footer" th:insert="fragment/footer"></div>
+</html>

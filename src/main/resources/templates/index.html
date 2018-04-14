@@ -1,0 +1,139 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div id="include" th:insert="fragment/include"></div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        initCarousel();
+        initDropdown();
+        setTimeout(autoplay, 7500);
+    });
+</script>
+<div id="navigation" th:insert="fragment/header"></div>
+<div id="container">
+
+  <!-- info(commercial) with carousel -->
+  <div class="carousel carousel-slider">
+    <div class="carousel-item">
+      <div class="row center">
+        <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <h5>新規会員募集中です！</h5>
+          <p>見学、お問合せ、いつでもお受けいたします！どうぞお気軽にご連絡ください。</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row center">
+        <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <h5>こんなレッスンもやってます</h5>
+          <p>色んな講師による色んなクラス。自分に合うクラスを探してみませんか？</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row center">
+        <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <h5>H30年度スケジュールを更新しました</h5>
+          <p>スケジュールの方が更新されました。予約等の際にはご確認をお願いします。</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row center">
+        <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <h5>ブログやインスタもやってます</h5>
+          <p>講師やスタッフによるブログ、インスタの更新を行なっています。スタジオの雰囲気を少しでもお届けできれば幸いです。</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row center">
+        <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <h5>cm5</h5>
+          <p>paragraph for commercial</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- static menus -->
+  <div class="row">
+    <div class="col s1 m3"></div>
+    <div class="col s5 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg"> <span class="card-title">About our studio</span>
+        </div>
+        <div class="card-content">
+          <p>三鷹にてヨガスタジオをやっています。詳細はこちら。</p>
+        </div>
+        <div class="card-action">
+          <a href="pages/introduction.html">studioについて</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s5 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg"> <span class="card-title">Lesson Informations</span>
+        </div>
+        <div class="card-content">
+          <p>スタジオでは様々なヨガ教室を開催しています。各クラスの詳細については下記のリンク先を参照してください。</p>
+        </div>
+        <div class="card-action">
+          <a href="pages/lesson.html">レッスンについて</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s1 m3"></div>
+  </div>
+  <div class="row">
+    <div class="col s1 m3"></div>
+    <div class="col s5 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg"> <span class="card-title">Schedules</span>
+        </div>
+        <div class="card-content">
+          <p>各クラスのスケジュールはこちらからご確認ください。</p>
+        </div>
+        <div class="card-action">
+          <a href="pages/schedule.html">スケジュールへ</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s5 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg"> <span class="card-title">Access</span>
+        </div>
+        <div class="card-content">
+          <p>スタジオの場所はこちらからご確認ください。</p>
+        </div>
+        <div class="card-action">
+          <a href="pages/access.html">地図を開く</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s1 m3"></div>
+  </div>
+
+</div>
+<div id="footer" th:insert="fragment/footer"></div>
+</html>
